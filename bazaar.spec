@@ -36,7 +36,7 @@ It emphasizes supporting the developers who make the Linux desktop possible.
 Bazaar features a "curated" tab that can be configured by distributors to allow for a more locallized experience.
 
 %prep
-%autosetup -n bazaar-%{version}
+%autosetup -n bazaar-%{version} -p1
 
 %build
 %meson
