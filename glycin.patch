@@ -1,0 +1,24 @@
+From ffc8fee72abb58a55995320ff92bd7381c246c58 Mon Sep 17 00:00:00 2001
+From: Kyle Gospodnetich <me@kylegospodneti.ch>
+Date: Wed, 27 Aug 2025 09:30:04 -0700
+Subject: [PATCH] Update to glycin-2
+
+---
+ src/meson.build | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/meson.build b/src/meson.build
+index 69902db..404df6a 100644
+--- a/src/meson.build
++++ b/src/meson.build
+@@ -13,8 +13,8 @@ xmlb_dep             = dependency('xmlb', version: '>= 0.3.4')
+ yaml_dep             = dependency('yaml-0.1', version: '>= 0.2.5')
+ libsoup_dep          = dependency('libsoup-3.0', version: '>= 3.6.0')
+ json_glib_dep        = dependency('json-glib-1.0', version: '>= 1.10.0')
+-glycin_dep           = dependency('glycin-1', version: '>= 1.0')
+-glycin_gtk4_dep      = dependency('glycin-gtk4-1', version: '>= 1.0')
++glycin_dep           = dependency('glycin-2', version: '>= 1.0')
++glycin_gtk4_dep      = dependency('glycin-gtk4-2', version: '>= 1.0')
+ 
+ 
+ dl_worker_sources = [
