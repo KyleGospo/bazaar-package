@@ -20,8 +20,8 @@ BuildRequires:  pkgconfig(libdex-1)
 BuildRequires:  pkgconfig(yaml-0.1)
 BuildRequires:  pkgconfig(libsoup-3.0)
 BuildRequires:  pkgconfig(json-glib-1.0)
-BuildRequires:  pkgconfig(glycin-1)
-BuildRequires:  pkgconfig(glycin-gtk4-1)
+BuildRequires:  pkgconfig(glycin-2)
+BuildRequires:  pkgconfig(glycin-gtk4-2)
 
 Requires:       glycin-libs
 Requires:       libadwaita
