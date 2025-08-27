@@ -9,7 +9,8 @@ License:        GPL-3.0-only
 URL:            https://github.com/kolunmi/bazaar
 Source0:        %{url}/archive/refs/tags/v%{version}.tar.gz
 
-Patch:          glycin.patch
+# https://github.com/kolunmi/bazaar/pull/275
+Patch:          275.patch
 
 BuildRequires:  meson
 BuildRequires:  systemd-rpm-macros
