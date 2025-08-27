@@ -12,6 +12,9 @@ Source0:        %{url}/archive/refs/tags/v%{version}.tar.gz
 # https://github.com/kolunmi/bazaar/pull/275
 Patch:          275.patch
 
+# https://fedoraproject.org/wiki/Changes/EncourageI686LeafRemoval
+ExcludeArch:    %{ix86}
+
 BuildRequires:  meson
 BuildRequires:  systemd-rpm-macros
 BuildRequires:  blueprint-compiler
