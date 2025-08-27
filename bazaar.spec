@@ -22,7 +22,6 @@ BuildRequires:  libsoup3-devel
 BuildRequires:  json-glib
 BuildRequires:  systemd-rpm-macros
 BuildRequires:  blueprint-compiler
-BuildRequires:  glycin-devel
 
 Requires:       glycin-libs
 Requires:       libadwaita
