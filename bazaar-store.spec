@@ -47,7 +47,7 @@ It emphasizes supporting the developers who make the Linux desktop possible.
 
 %install
 %meson_install
-%find_lang %{name}
+%find_lang bazaar
 
 %post
 %systemd_user_post %{appid}.service
