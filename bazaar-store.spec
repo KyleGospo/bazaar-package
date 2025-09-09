@@ -58,7 +58,7 @@ It emphasizes supporting the developers who make the Linux desktop possible.
 %postun
 %systemd_user_postun_with_restart %{appid}.service
 
-%files -f %{name}.lang
+%files -f bazaar.lang
 %license COPYING
 %doc README.md
 %{_datadir}/applications/%{appid}.desktop
