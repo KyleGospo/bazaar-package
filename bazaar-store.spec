@@ -62,8 +62,8 @@ It emphasizes supporting the developers who make the Linux desktop possible.
 %license COPYING
 %doc README.md
 %{_datadir}/applications/%{appid}.desktop
-%{_bindir}/%{name}
-%{_bindir}/%{name}-dl-worker
+%{_bindir}/bazaar
+%{_bindir}/bazaar-dl-worker
 %{_userunitdir}/%{appid}.service
 %{_datadir}/dbus-1/services/%{appid}.service
 %{_datadir}/glib-2.0/schemas/%{appid}.gschema.xml
