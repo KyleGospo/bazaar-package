@@ -17,6 +17,7 @@ Patch:          https://patch-diff.githubusercontent.com/raw/kolunmi/bazaar/pull
 # https://fedoraproject.org/wiki/Changes/EncourageI686LeafRemoval
 ExcludeArch:    %{ix86}
 
+BuildRequires:  gcc
 BuildRequires:  meson
 BuildRequires:  systemd-rpm-macros
 BuildRequires:  blueprint-compiler
