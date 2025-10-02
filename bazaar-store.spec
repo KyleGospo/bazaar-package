@@ -1,18 +1,13 @@
 %global appid io.github.kolunmi.Bazaar
 
 Name:           bazaar-store
-Version:        0.4.8
+Version:        0.5.2
 Release:        1%{?dist}
 Summary:        Flatpak-centric software center and app store
 
 License:        GPL-3.0-only
 URL:            https://github.com/kolunmi/bazaar
 Source:         %{url}/archive/v%{version}/bazaar-%{version}.tar.gz
-
-# Patch to update Bazaar for glycin 2.0, currently shipped in Fedora Rawhide.
-# Upstream has agreed to merge this when glycin 2.0 is marked stable.
-# See: https://github.com/kolunmi/bazaar/pull/275
-Patch:          https://patch-diff.githubusercontent.com/raw/kolunmi/bazaar/pull/275.patch
 
 # https://fedoraproject.org/wiki/Changes/EncourageI686LeafRemoval
 ExcludeArch:    %{ix86}
@@ -38,7 +33,7 @@ applications and add-ons from Flatpak remotes, particularly Flathub.
 It emphasizes supporting the developers who make the Linux desktop possible.
 
 %prep
-%autosetup -n bazaar-%{version} -p1
+%autosetup -n bazaar-%{version}
 
 %conf
 %meson
@@ -49,6 +44,9 @@ It emphasizes supporting the developers who make the Linux desktop possible.
 %install
 %meson_install
 %find_lang bazaar
+
+%check
+desktop-file-validate %{buildroot}%{_datadir}/applications/%{appid}.desktop
 
 %post
 %systemd_user_post %{appid}.service
