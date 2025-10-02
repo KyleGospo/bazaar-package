@@ -72,5 +72,5 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{appid}.desktop
 %{_datadir}/gnome-shell/search-providers/%{appid}.search-provider.ini
 
 %changelog
-* Mon Sep 08 2025 Kyle Gospodnetich <me@kylegospodneti.ch> - 0.4.8-1
+* Wed Oct 01 2025 Kyle Gospodnetich <me@kylegospodneti.ch> - 0.5.2-1
 - Initial release of the bazaar-store package
